@@ -1,0 +1,248 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+section {
+  float: left;
+  background: #bdc3c7;
+  padding: 10px;
+  margin: 30px;
+  width: auto;
+  box-shadow: 3px 3px 1px #34495e;
+  height: auto;
+  box-align: center;
+}
+
+.errors {
+  background: #e79892;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  display: inline-block;
+  border: 1px solid #e74c3c;
+}
+section:first-of-type {
+  margin-left: 0;
+}
+
+section:last-of-type {
+  margin-right: 0;
+}
+
+section h3 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+
+.input label {
+  display: block;
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px #34495e;
+  border-radius: 0;
+  background: #ecf0f1;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #bdc3c7;
+}
+
+.item {
+  margin: 10px 0;
+  padding: 5px;
+  background: #95a5a6;
+  border: 1px solid black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(127, 53, 177);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgba(33, 74, 128, 0.63);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+/* newcss */
+
+#txt{
+  float: right;
+  color: black;
+  font-size: 40px;
+  font-family:'Annie Use Your Telescope';
+}
+/* body{
+   background-color: :#EEEEEE;
+} */
+
+.hospital{
+  float: left;
+  padding-right: 40px;
+  color: black;
+
+}
+
+.main-content{
+    width: 60%;
+    float: left;
+    background: #15adb2;
+    padding: 20px;
+    height: 100%;
+}
+.aside{
+    width: 40%;
+    float: right;
+    padding: 20px;
+}
+.wrapper, html, body{
+    height: 100%;
+    background-color:#15adb2;
+    text-align: center;
+}
+
+
+.wrapper_sign {
+  background-color: #fff;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -4px 4px 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 8px #BEBEBE;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+}
+
+
+
+.wrapper_login {
+  background-color: #fff;
+  padding: 20px;
+  width: 37.5%;
+  border-radius: 40px 40px 40px 40px;
+  text-align: center;
+}
+
+.wrapper_error {
+  background-color: hsl(358, 75%, 60%);
+  padding: 20px;
+  width: 37.5%;
+  border-radius: 40px 40px 40px 40px;
+  text-align: center;
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+.login h1 {
+  color: #666;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 1.5em;
+  animation: pulse 1s linear infinite alternate;
+  -webkit-animation: pulse 1s linear infinite alternate;
+}
+
+
+input {
+  width: 90%;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  font-size: 13px;
+  color: #777;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  border-radius: 20px;
+}
+
+textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  font-size: 13px;
+  color: #777;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  border-radius: 20px;
+}
+
+input:focus {
+  box-shadow: inset 0 0 5px rgba(27, 188, 155, 0.5)
+}
+
+
+.submit {
+  width: 90%;
+  padding: .8em 0 10px .8em;
+  background-color: #1BBC9B;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: .6em;
+}
+
+.submit:hover {
+  background-color: #65C6BB;
+}
+
+

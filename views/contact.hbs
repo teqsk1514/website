@@ -1,0 +1,54 @@
+{{#if success}}
+    {{!-- <h3 style="text-align :left">Contacting is succesful</h3> --}}
+    <section class="wrapper_login">
+    <div class="login">
+    <form action="/insert" method="post">
+        <h3>Contact Us</h3>
+        <div class="input">
+            <label for="title">User Name</label>
+            <input type="text" id="title" name="user">
+        </div>
+        <div class="input">
+            <label for="content">E-mail </label>
+            <input type="text" id="content" name="email">
+        </div>
+        <div class="input">
+            <label for="author">Message</label>
+            <textarea rows="4" cols="25" type="text" id="author" name="message"></textarea>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    </div>
+    </section>
+
+{{ else }}
+    {{# if errors}}
+        <section class="wrapper_error">
+            <ul>
+                {{# each errors}}
+                    <li>{{this.msg}}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+    <section class="wrapper_login">
+    <div class="login">
+    <form action="/insert" method="post">
+        <h3>Contact Us</h3>
+        <div class="input">
+            <label for="title">User Name</label>
+            <input type="text" id="title" name="user">
+        </div>
+        <div class="input">
+            <label for="content">E-mail </label>
+            <input type="text" id="content" name="email">
+        </div>
+        <div class="input">
+            <label for="author">Message</label>
+            <textarea rows="4" cols="25" type="text" id="author" name="message"></textarea>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    </div>
+    </section>
+{{/if}}
