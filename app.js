@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var mongoose = require('mongoose');
-//var favicon = require('serve-favicon');
+
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -15,7 +15,7 @@ var app = express();
 
 //connecting to mlab.
 
-mongoose.connect('mongodb://teqsk1514:iamravi14@ds211592.mlab.com:11592/userdata', { useNewUrlParser: true },()=>{
+mongoose.connect('mongodb://vrook:vrook1234@ds211592.mlab.com:11592/userdata', { useNewUrlParser: true },()=>{
  console.log('connected to mongodb');
  });
 
