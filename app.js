@@ -15,9 +15,13 @@ var app = express();
 
 //connecting to mlab.
 
-mongoose.connect('mongodb://vrook:vrook1234@ds211592.mlab.com:11592/userdata', { useNewUrlParser: true },()=>{
+mongoose.connect('mongodb://<username>:<password>@ds211592.mlab.com:11592/userdata', { useNewUrlParser: true },()=>{
  console.log('connected to mongodb');
  });
+
+// mongoose.connect('mongodb://vrook:vrook1234@ds211592.mlab.com:11592/userdata', { useNewUrlParser: true },()=>{
+//  console.log('connected to mongodb');
+//  });
 
 //create engine
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
